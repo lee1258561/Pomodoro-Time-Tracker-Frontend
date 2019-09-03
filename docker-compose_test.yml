@@ -1,0 +1,12 @@
+version: "2"
+services:
+  backend2web2test:
+    container_name: backend2web2test
+    restart: always
+    image: friedcosey/backend2:test 
+    ports:
+      - "9002:8080"
+  mongoweb2test:
+    container_name: mongoweb2test
+    image: mongo
+    restart: always
